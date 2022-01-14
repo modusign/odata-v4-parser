@@ -1,16 +1,11 @@
 {
-  "name": "odata-v4-parser",
-  "version": "0.1.29",
+  "name": "@modusign/odata-v4-parser",
+  "version": "0.1.0",
   "description": "OData v4 Parser",
   "main": "lib/parser.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jaystack/odata-v4-parser.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jaystack/odata-v4-parser/issues"
-  },
-  "homepage": "https://github.com/jaystack/odata-v4-parser#readme",
+  "repository": "https://github.com/modusign/odata-v4-parser",
+  "bugs": "https://github.com/modusign/odata-v4-parser/issues",
+  "homepage": "https://github.com/modusign/odata-v4-parser#readme",
   "author": "JayStack",
   "license": "MIT",
   "scripts": {
