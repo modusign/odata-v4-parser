@@ -1,6 +1,6 @@
 {
   "name": "@modusign/odata-v4-parser",
-  "version": "0.1.0",
+  "version": "0.1.29",
   "description": "OData v4 Parser",
   "main": "lib/parser.js",
   "repository": "https://github.com/modusign/odata-v4-parser",
@@ -32,7 +32,9 @@
     "typedoc": "^0.11.1",
     "typedoc-default-themes": "^0.5.0",
     "typedoc-plugin-external-module-name": "^1.1.1",
-    "typescript": "^2.9.1"
+    "typescript": "^3.9.10",
+    "semantic-release": "^17.4.4",
+    "semantic-release-slack-bot": "^2.1.1"
   },
   "typings": "lib/parser.d.ts"
 }
