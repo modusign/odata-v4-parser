@@ -222,6 +222,7 @@ export namespace Lexer {
     export function DIGIT(value: number): boolean { return (value >= 0x30 && value <= 0x39); }
     export function HEXDIG(value: number): boolean { return Lexer.DIGIT(value) || Lexer.AtoF(value); }
     export function AtoF(value: number): boolean { return (value >= 0x41 && value <= 0x46) || (value >= 0x61 && value <= 0x66); }
+    export function SPECIAL(value: number): boolean { return (value >= 0x21 && value <= 0x2F) || (value >= 0x3A && value <= 0x40) || (value >= 0x5B && value <= 0x60) || (value >= 0x7B && value <= 0x7E); }
     export function DQUOTE(value: number): boolean { return value === 0x22; }
     export function SP(value: number): boolean { return value === 0x20; }
     export function HTAB(value: number): boolean { return value === 0x09; }
@@ -289,7 +290,7 @@ export namespace Lexer {
         else if (Utils.equals(value, index, "%29")) return index + 3;
     }
     // unreserved ALPHA / DIGIT / "-" / "." / "_" / "~"
-    export function unreserved(value: number): boolean { return Lexer.ALPHA(value) || Lexer.DIGIT(value) || value === 0x2d || value === 0x2e || value === 0x5f || value === 0x7e; }
+    export function unreserved(value: number): boolean { return Lexer.ALPHA(value) || Lexer.DIGIT(value) || Lexer.SPECIAL(value) || value === 0x2d || value === 0x2e || value === 0x5f || value === 0x7e; }
     // other-delims "!" /                   "(" / ")" / "*" / "+" / "," / ";"
     export function otherDelims(value: Utils.SourceArray, index: number): number {
         if (value[index] === 0x21 || value[index] === 0x2b) return index + 1;
