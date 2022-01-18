@@ -21,6 +21,8 @@
     "prepublish": "npm run test"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
@@ -34,13 +36,13 @@
     "mochawesome": "^3.0.2",
     "remap-istanbul": "^0.11.1",
     "rimraf": "^2.6.2",
+    "semantic-release": "^17.4.4",
+    "semantic-release-slack-bot": "^2.1.1",
     "tslint": "^5.10.0",
     "typedoc": "^0.11.1",
     "typedoc-default-themes": "^0.5.0",
     "typedoc-plugin-external-module-name": "^1.1.1",
-    "typescript": "^3.9.10",
-    "semantic-release": "^17.4.4",
-    "semantic-release-slack-bot": "^2.1.1"
+    "typescript": "^3.9.10"
   },
   "typings": "lib/parser.d.ts"
 }
