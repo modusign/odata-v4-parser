@@ -1,6 +1,6 @@
 {
   "name": "@modusign/odata-v4-parser",
-  "version": "1.0.0",
+  "version": "0.1.29",
   "description": "OData v4 Parser",
   "main": "lib/parser.js",
   "repository": "https://github.com/modusign/odata-v4-parser",
